@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>BLACK FORCE 007 — Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Supabase JS (change version if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="logo">
+        <img id="brandLogo" src="/mnt/data/A_digital_graphic_design_image_features_the_text_&quot;.png" alt="BLACK FORCE 007" />
+        <h1>BLACK FORCE <span>007</span></h1>
+      </div>
+      <div class="meta">
+        <div id="timer">00:00</div>
+        <div id="moves">Moves: 0</div>
+        <div id="score">Score: 0</div>
+      </div>
+    </header>
+
+    <section class="controls">
+      <div class="left">
+        <input id="playerName" placeholder="Your name (optional)" />
+        <button id="startBtn">Start Game</button>
+        <button id="shuffleBtn">Shuffle</button>
+      </div>
+      <div class="right">
+        <label>Theme
+          <select id="themeSelect">
+            <option value="dark">Dark</option>
+            <option value="metal">Metallic</option>
+            <option value="neon">Neon</option>
+          </select>
+        </label>
+        <button id="saveScoreBtn" disabled>Save Score</button>
+      </div>
+    </section>
+
+    <section id="gameWrap">
+      <div id="board" class="board"></div>
+    </section>
+
+    <aside class="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul id="leaderList"></ul>
+    </aside>
+
+    <footer class="footer">
+      <small>Built for Black Force 007 — Mobile friendly • Cloud assets</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
